@@ -1,7 +1,7 @@
 body{
     width:1024px;
     margin: 0 auto;
-    color:#545E6C;
+    color:#106a80;
     font-size: 14px;
     font-style: normal;
     font-family: 'Roboto', sans-serif;
@@ -9,7 +9,7 @@ body{
 }
 
 header{
-    background: #42a8c0;
+    background: #106a80;
     text-align: center;
     color: #fff
 }
@@ -41,4 +41,98 @@ font-weight:bold;
     width:400px;
     font-size:2em;
     font-weight:bold;
+}
+
+main{
+    display:flex;
+}
+
+section{
+flex-grow: 10;
+}
+
+aside{
+    flex-grow: 1;
+    background-color:#42a8c0;;
+}
+aside .contact-list .fas,
+aside .contact-list .fab {
+    margin-right: 5px;
+    font-size: 18px;
+    vertical-align: middle
+}
+
+aside .contact-list li {
+    margin-bottom: 15px
+}
+
+aside .contact-list li:last-child {
+    margin-bottom: 0
+}
+
+aside .container-block {
+    padding: 30px
+}
+
+aside .container-block-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px
+}
+
+aside .degree {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 5px
+}
+
+aside .education-container .item {
+    margin-bottom: 15px
+}
+
+aside .education-container .item:last-child {
+    margin-bottom: 0
+}
+
+aside .education-container .meta {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: 0
+}
+
+aside .education-container .time {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    margin-bottom: 0px
+}
+
+aside .languages-container .lang-desc {
+    color: rgba(255, 255, 255, 0.6)
+}
+
+aside .languages-list {
+    margin-bottom: 0
+}
+
+aside .languages-list li {
+    margin-bottom: 10px
+}
+
+aside .languages-list li:last-child {
+    margin-bottom: 0
+}
+
+aside .interests-list {
+    margin-bottom: 0
+}
+
+aside .interests-list li {
+    margin-bottom: 10px
+}
+
+aside .interests-list li:last-child {
+    margin-bottom: 0
 }
