@@ -1,77 +1,98 @@
-body{
-    width:1024px;
+body {
+    width: 1024px;
     margin: 0 auto;
-    color:#106a80;
+    margin-top: 20px;
     font-size: 14px;
     font-style: normal;
     font-family: 'Roboto', sans-serif;
-    background-color:#f5f5f5;
 }
 
-header{
-    background: #106a80;
+header {
     text-align: center;
-    color: #fff
+    background: #106a80;
+    color: #fff;
 }
 
-.profile{
+.profile {
     display:flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.image .avatar {
+.avatar {
     margin: 15px;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
+    border-radius: 2%;
+    box-shadow: 0px 2px 4px rgba(256, 256, 256, 0.4);
 }
 
-.introduce{
-display:flex;
-align-items: center;
-width:800px;
+.introduce {
+    display: flex;
+    align-items: center;
+    width: 800px;
 }
 
-.introduce .name{
-width:200px;
-font-size:3em;
-font-weight:bold;
+.introduce .name {
+    width: 300px;
+    font-size: 3em;
+    font-weight: bold;
 }
 
-.introduce .specialty{
-    width:400px;
-    font-size:2em;
-    font-weight:bold;
+.introduce .specialty {
+    width: 400px;
+    font-size: 2em;
+    font-weight: bold;
 }
 
-main{
-    display:flex;
+main {
+    display: flex;
+    background-color:#fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-section{
-flex-grow: 10;
+section {
+    flex-grow: 15;
 }
 
-aside{
+aside {
     flex-grow: 1;
-    background-color:#42a8c0;;
+    background-color:#42a8c0;
+    color:#fff;
 }
+
+a {
+    color: #2d7788;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    text-decoration: none;
+    color: #2d7788;
+}
+aside a {
+    color:#fff;
+}
+
 aside .contact-list .fas,
 aside .contact-list .fab {
+    vertical-align: middle;
     margin-right: 5px;
     font-size: 18px;
-    vertical-align: middle
 }
 
 aside .contact-list li {
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 
 aside .contact-list li:last-child {
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
 aside .container-block {
-    padding: 30px
+    padding: 30px;
 }
 
 aside .container-block-title {
@@ -79,60 +100,70 @@ aside .container-block-title {
     font-size: 16px;
     font-weight: 700;
     margin-top: 0;
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 
 aside .degree {
     font-size: 14px;
     margin-top: 0;
-    margin-bottom: 5px
+    margin-bottom: 5px;
 }
 
 aside .education-container .item {
-    margin-bottom: 15px
+    margin-bottom: 15px;
 }
 
 aside .education-container .item:last-child {
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
 aside .education-container .meta {
     color: rgba(255, 255, 255, 0.6);
     font-weight: 500;
     margin-bottom: 0px;
-    margin-top: 0
+    margin-top: 0;
 }
 
 aside .education-container .time {
     color: rgba(255, 255, 255, 0.6);
     font-weight: 500;
-    margin-bottom: 0px
+    margin-bottom: 0px;
 }
 
 aside .languages-container .lang-desc {
-    color: rgba(255, 255, 255, 0.6)
+    color: rgba(255, 255, 255, 0.5);
 }
 
 aside .languages-list {
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
 aside .languages-list li {
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
 aside .languages-list li:last-child {
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
 aside .interests-list {
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
 aside .interests-list li {
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
 aside .interests-list li:last-child {
-    margin-bottom: 0
+    margin-bottom: 0;
+}
+
+.footer{
+    display: flex;
+    height: 50px;    
+}
+
+.designed{
+    margin: 0 auto;
+    padding: 20px;
 }
