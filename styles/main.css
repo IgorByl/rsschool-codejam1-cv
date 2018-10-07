@@ -1,7 +1,7 @@
 body {
     width: 1024px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 14px;
     font-style: normal;
     font-family: 'Roboto', sans-serif;
@@ -11,6 +11,7 @@ header {
     text-align: center;
     background: #106a80;
     color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .profile {
@@ -19,9 +20,8 @@ header {
 }
 
 .avatar {
-    margin: 15px;
+    margin: 25px;
     border: 1px solid #fff;
-    border-radius: 2%;
     box-shadow: 0px 2px 4px rgba(256, 256, 256, 0.4);
 }
 
@@ -45,16 +45,22 @@ header {
 
 main {
     display: flex;
+    justify-content: space-between;
     background-color:#fff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
+main p, .project-tagline {
+    line-height: 1.5;
+    color: #545E6C;
+}
 
 section {
-    flex-grow: 15;
+    display:flex;
+    flex-basis: 70%; 
 }
 
 aside {
-    flex-grow: 1;
+    
     background-color:#42a8c0;
     color:#fff;
 }
@@ -74,13 +80,6 @@ a:focus {
 }
 aside a {
     color:#fff;
-}
-
-aside .contact-list .fas,
-aside .contact-list .fab {
-    vertical-align: middle;
-    margin-right: 5px;
-    font-size: 18px;
 }
 
 aside .contact-list li {
@@ -158,12 +157,120 @@ aside .interests-list li:last-child {
     margin-bottom: 0;
 }
 
-.footer{
-    display: flex;
-    height: 50px;    
+.main-wrapper {
+    background: #fff;
+    padding: 60px;
+}
+
+.main-wrapper .section-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    color: #2d7788;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.main-wrapper .section {
+    margin-bottom: 60px;
+}
+
+.skillset .item {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.skillset .level-title {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.level-bar {
+    height: 12px;
+    background: #f5f5f5;
+}
+
+.html-css .level-bar-inner {
+    height: 12px;
+    width:350px;
+    background: #7bc2d3;
+}
+
+.js .level-bar-inner {
+    height: 12px;
+    width:40px;
+    background: #7bc2d3;
+}
+
+.ang-re-no .level-bar-inner {
+    width: 0px;
+    height: 12px;
+    background: #7bc2d3;
+}
+
+.git .level-bar-inner {
+    height: 12px;
+    width:170px;
+    background: #7bc2d3;
+}
+
+.photoshop .level-bar-inner {
+    height: 12px;
+    width:210px;
+    background: #7bc2d3;
+}
+
+.main-wrapper .experiences-section .item,
+.main-wrapper .educations-section .item {
+    margin-bottom: 30px;
+}
+
+.main-wrapper .upper-row {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2px;
+}
+
+.main-wrapper .job-title{
+    color: #3F4650;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.main-wrapper .time {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #97AAC3;
+}
+
+.main-wrapper .company{
+    margin-bottom: 10px;
+    color: #97AAC3;
+}
+
+.main-wrapper .project-title {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.main-wrapper .projects-section .intro {
+    margin-bottom: 30px;
+}
+
+.main-wrapper .projects-section .item {
+    margin-bottom: 15px;
 }
 
 .designed{
-    margin: 0 auto;
-    padding: 20px;
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+    height: 50px;
 }
